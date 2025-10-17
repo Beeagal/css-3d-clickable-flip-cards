@@ -21,7 +21,7 @@ https://beeagal.github.io/css-3d-clickable-flip-cards/
 ```
 .
 ├── index.html
-├── styles.scss   # Source (edit this in CodePen with SCSS preprocessor ON)
+├── styles.scss   
 ├── styles.css    # Precompiled for GitHub Pages
 ├── script.js
 └── README.md
