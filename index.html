@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Clickable Flip Cards — Product Promo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="Interactive CSS 3D clickable flip cards promoting products. Built with semantic HTML, accessible interactions, and SCSS.">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Fall Spotlight</h1>
+    <p>Three products. One clean 3D experience. Click or tap a card to see details.</p>
+  </header>
+
+  <main class="grid">
+    <!-- Card 1 -->
+    <article class="card" data-card>
+      <div class="card__inner" aria-live="polite">
+        <div class="card__face card__face--front">
+          <div class="badge">New</div>
+          <h2 class="product">Luna Headphones</h2>
+          <p class="tagline">Noise-cancelling • 32h battery</p>
+          <button class="flip-btn" aria-label="View details about Luna Headphones" data-flip>View Details</button>
+        </div>
+        <div class="card__face card__face--back">
+          <h3>Luna Headphones</h3>
+          <ul class="bullets">
+            <li>Hybrid ANC with ambient pass-through</li>
+            <li>Low-latency mode for gaming & calls</li>
+            <li>USB‑C fast charge (10 min → 5 h)</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="#" aria-label="Buy Luna Headphones">Buy Now</a>
+            <button class="flip-btn flip-btn--secondary" aria-label="Go back" data-flip>Back</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card" data-card>
+      <div class="card__inner" aria-live="polite">
+        <div class="card__face card__face--front card__face--front-2">
+          <div class="badge">-20%</div>
+          <h2 class="product">Solstice Watch</h2>
+          <p class="tagline">Sapphire glass • 10 ATM</p>
+          <button class="flip-btn" aria-label="View details about Solstice Watch" data-flip>View Details</button>
+        </div>
+        <div class="card__face card__face--back card__face--back-2">
+          <h3>Solstice Watch</h3>
+          <ul class="bullets">
+            <li>Solar-assist charging, 30-day standby</li>
+            <li>Grade‑2 titanium, feather‑light</li>
+            <li>Always‑on display, multi‑dial</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="#" aria-label="Buy Solstice Watch">Buy Now</a>
+            <button class="flip-btn flip-btn--secondary" aria-label="Go back" data-flip>Back</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card" data-card>
+      <div class="card__inner" aria-live="polite">
+        <div class="card__face card__face--front card__face--front-3">
+          <div class="badge">Bestseller</div>
+          <h2 class="product">Nimbus Sneakers</h2>
+          <p class="tagline">Cloud foam • Recycled knit</p>
+          <button class="flip-btn" aria-label="View details about Nimbus Sneakers" data-flip>View Details</button>
+        </div>
+        <div class="card__face card__face--back card__face--back-3">
+          <h3>Nimbus Sneakers</h3>
+          <ul class="bullets">
+            <li>Ultra‑flex sole for all‑day comfort</li>
+            <li>Machine‑washable upper</li>
+            <li>Made from 65% recycled materials</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="#" aria-label="Buy Nimbus Sneakers">Buy Now</a>
+            <button class="flip-btn flip-btn--secondary" aria-label="Go back" data-flip>Back</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with semantic HTML, accessible controls, and pure CSS 3D transforms.</p>
+    <p>Tip: On desktop, you can also hover a card to preview the flip.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
